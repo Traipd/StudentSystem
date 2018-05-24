@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="编号"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/delectnum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <TextView android:text="姓名"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+        <TextView android:text="年级"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+     <Button
+         android:text="添加学生(无需编号)"
+         android:textSize="15sp"
+         android:onClick="add"
+         android:layout_width="match_parent"
+         android:layout_height="40dp" />
+    <Button
+        android:text="查询所有"
+        android:textSize="15sp"
+        android:onClick="query"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="修改信息（按编号）"
+        android:textSize="15sp"
+        android:onClick="update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="删除学生（按编号）"
+        android:textSize="15sp"
+        android:onClick="delect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="编号"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+           android:layout_weight="1"
+            />
+        <TextView
+            android:text="名字"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="3"
+            />
+        <TextView
+            android:text="年级"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            />
+     </LinearLayout>
+
+     <ListView
+         android:id="@+id/result"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
